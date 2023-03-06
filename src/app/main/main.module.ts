@@ -5,17 +5,21 @@ import { MainRoutingModule } from './main-routing.module';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { MainCardsComponent } from './components/main-cards/main-cards.component';
 import { TopCountriesComponent }  from'./components/topcountries/topcountries.component';
+import { ConfirmedByCountryComponent } from './components/confirmed-by-country/confirmed-by-country.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
   declarations: [
     MainPageComponent,
     MainCardsComponent,
-    TopCountriesComponent
+    TopCountriesComponent,
+    ConfirmedByCountryComponent
   ],
   imports: [
     CommonModule,
-    MainRoutingModule
+    MainRoutingModule,
+    SharedModule
   ]
 })
 export class MainModule { }

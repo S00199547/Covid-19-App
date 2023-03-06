@@ -7,7 +7,8 @@ import { CountryModule } from './country/country.module';
 import { LiveModule } from './live/live.module';
 import { SharedModule } from './shared/shared.module';
 import {MainModule} from'./main/main.module';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
