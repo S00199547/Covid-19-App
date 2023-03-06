@@ -4,7 +4,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { RouterModule } from '@angular/router';
 import { SearchComponent } from './components/search/search.component';
-
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +15,8 @@ import { SearchComponent } from './components/search/search.component';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   exports: [
     SidebarComponent,
