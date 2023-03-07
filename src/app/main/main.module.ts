@@ -7,6 +7,8 @@ import { MainCardsComponent } from './components/main-cards/main-cards.component
 import { TopCountriesComponent }  from'./components/topcountries/topcountries.component';
 import { ConfirmedByCountryComponent } from './components/confirmed-by-country/confirmed-by-country.component';
 import { SharedModule } from '../shared/shared.module';
+import { ChartComponent } from './components/chart/chart.component';
+import {ChartsModule} from 'ng2-charts';
 
 
 @NgModule({
@@ -14,12 +16,14 @@ import { SharedModule } from '../shared/shared.module';
     MainPageComponent,
     MainCardsComponent,
     TopCountriesComponent,
-    ConfirmedByCountryComponent
+    ConfirmedByCountryComponent,
+    ChartComponent
   ],
   imports: [
     CommonModule,
     MainRoutingModule,
-    SharedModule
+    SharedModule,
+    ChartsModule
   ]
 })
 export class MainModule { }
